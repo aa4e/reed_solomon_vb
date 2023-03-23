@@ -5,7 +5,7 @@ Also realization of arithmetics in **Galois fields**.
 
 ## Usage examples
 
-- Encoding:
+### Encoding:
 
 ```
 Dim rs As New ReedSolomon(255, 246, 8, 285)
@@ -13,7 +13,7 @@ Dim messageToEncode As Integer() = {&H68, &H65, &H6C, &H6C, &H6F, &H20, &H77, &H
 Dim encodedMessage As Integer() = rs.Encode(messageToEncode)
 ```
 
-- Decoding:
+### Decoding:
 
 ```
 Dim decodedMessage as Integer() = rs.Decode(encodedMessage)
